@@ -10,12 +10,12 @@ const cors = require("cors")
 
 const JWT_SECRET = process.env.JWT_SECRET
 
-const MONGODB = process.env.db 
+const MONGODB = (`${process.env.db}`) 
 
 
 const app = express()
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000
 
 
 app.listen(PORT, ()=>{
